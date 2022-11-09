@@ -15,7 +15,7 @@ Soluciones de otros usuarios
 
 
 * https://github.com/ivanlolivier/codember -> Ivan L'olivier 
-* https://github.com/ikurotime/codembe -> David Huertas
+* https://github.com/ikurotime/codember_rust -> David Huertas
 
 
 Si gustan colaborar o quieren que agregue sus soluciones ala lista los pull requests estan abiertos! :man_technologist: :tada:
