@@ -1,13 +1,23 @@
 # Codember 
 
+```
+   ______          __               __             
+  / ____/___  ____/ /__  ____ ___  / /_  ___  _____
+ / /   / __ \/ __  / _ \/ __ `__ \/ __ \/ _ \/ ___/
+/ /___/ /_/ / /_/ /  __/ / / / / / /_/ /  __/ /    
+\____/\____/\__,_/\___/_/ /_/ /_/_.___/\___/_/   
+
+Puedes superar los retos de programación?
+```
+
 Implementaciones de los retos de [Codember](https://codember.dev/) en Javascript y Rust
 
 Al menos en Rust se hara el intento :sweat_smile: 
 
 
-|   Ejercicio  |            Solucion          |
-|      :-:     | :-:                          |                              
-| users.txt db | :heavy_check_mark:           |
+|   Ejercicio      |            Solucion          |
+|      :-:         | :-:                          |                              
+| Arregla Twitter! | :heavy_check_mark:           |
 
 ```sh
 .
@@ -26,5 +36,7 @@ Soluciones de otros usuarios
 * https://github.com/maadeval/codember-javascript -> Mateo Álvarez
 * https://github.com/d3vcloud/codember-2022 -> Xavimon
 * https://github.com/CAMILOITT/codember -> CamiloITT
+* https://github.com/jesusmarzor/codember2022 -> Jesus Martin
+* https://github.com/camiloacostam/codember_js -> Camilo Acosta
 
 Si gustan colaborar o quieren que agregue sus soluciones ala lista los pull requests estan abiertos! :man_technologist: :tada:
