@@ -28,8 +28,21 @@ Al menos en Rust se hara el intento :sweat_smile:
 └── README.md
 ```
 
-Soluciones de otros usuarios
+## Ejecutar los retos
 
+* Javascript
+
+```
+npm run reto1
+```
+
+* Rust
+
+```
+cargo reto1
+```
+
+## Soluciones de otros usuarios
 
 * https://github.com/ivanlolivier/codember -> Ivan L'olivier 
 * https://github.com/ikurotime/codember_rust -> David Huertas
