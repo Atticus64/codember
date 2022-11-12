@@ -36,7 +36,7 @@ Soluciones de otros usuarios
 * https://github.com/maadeval/codember-javascript -> Mateo Álvarez
 * https://github.com/d3vcloud/codember-2022 -> Xavimon
 * https://github.com/CAMILOITT/codember -> CamiloITT
-* https://github.com/jesusmarzor/codember2022 -> Jesus Martin
+* https://github.com/jesusmarzor/codember2022 -> Jesús Martín
 * https://github.com/camiloacostam/codember_js -> Camilo Acosta
 
 Si gustan colaborar o quieren que agregue sus soluciones ala lista los pull requests estan abiertos! :man_technologist: :tada:
