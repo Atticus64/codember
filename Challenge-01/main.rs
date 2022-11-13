@@ -12,29 +12,31 @@ fn main() {
         .expect("failed to read file");
 
     let users = String::from(contents);
-    let mut user_vec: Vec<&str> = vec![];
-
-    let mut users_data: Vec<Vec<&str>> = vec![];
-
+    
+    let mut users_data: Vec<String> = vec![];
+    
+    let mut user_str =  String::from("");
     for user in users.lines().enumerate() {
-        // let index = user.0;
+        // let index = user.0
         let content = user.1;
         if content != "" {
-            user_vec.push(content);
+            user_str.push_str(&content);
         } else {
-            users_data.push(user_vec);
-            user_vec = vec![];
+            users_data.push(user_str);
+            user_str = String::from("")
         }
     }
 
-    let data: Vec<Vec<&str>> = users_data.into_iter()
-                                .map(|user| user.into_iter()
-                                .filter(|d| have_fields(d)).collect()).collect();
+    let data: Vec<String> = users_data.into_iter()
+                                        .filter(|u| have_fields(u))
+                                        .collect();
+    
+    println!("{:?}", data.len());
+    println!("{:?}", data[ data.len() -1 ]);
 
-    println!("{:?}", data );
 }
 
 
-fn have_fields(data: &str) -> bool {
+fn have_fields(data: &String) -> bool {
     data.contains(REQUIRED_FIELDS[0]) &&  data.contains(REQUIRED_FIELDS[1]) &&  data.contains(REQUIRED_FIELDS[2]) &&  data.contains(REQUIRED_FIELDS[3]) &&  data.contains(REQUIRED_FIELDS[4]) &&  data.contains(REQUIRED_FIELDS[5])
 }
