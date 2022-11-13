@@ -1,7 +1,7 @@
 use std::fs;
 use std::env;
 use std::vec;
-// use std::string;
+
 const REQUIRED_FIELDS: [&str; 6] = ["usr", "age", "eme", "psw", "loc", "fll"];
 
 fn main() {
@@ -17,7 +17,6 @@ fn main() {
     
     let mut user_str =  String::from("");
     for user in users.lines().enumerate() {
-        // let index = user.0
         let content = user.1;
         if content != "" {
             user_str.push_str(&content);
