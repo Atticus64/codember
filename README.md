@@ -10,8 +10,9 @@
 
 Puedes superar los retos de programación?
 ```
+By [Midudev](https://github.com/midudev) :man_technologist: :space_invader: 
 
-Implementaciones de los retos de [Codember](https://codember.dev/) en Javascript y Rust
+## Implementaciones de los retos de [Codember](https://codember.dev/) en Javascript y Rust
 
 Al menos en Rust se hara el intento :sweat_smile: 
 
