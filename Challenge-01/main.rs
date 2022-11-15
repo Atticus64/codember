@@ -8,16 +8,14 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     let file_path = &args[1];
 
-    let contents = fs::read_to_string(file_path)
+    let users = fs::read_to_string(file_path)
         .expect("failed to read file");
 
-    let users = String::from(contents);
-    
     let mut users_data: Vec<String> = vec![];
     
     let mut user_str =  String::from("");
-    for user in users.lines().enumerate() {
-        let content = user.1;
+    for (_idx, user) in users.lines().enumerate() {
+        let content = user;
         if content != "" {
             user_str.push_str(&content);
         } else {
