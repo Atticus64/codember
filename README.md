@@ -46,12 +46,14 @@ cargo reto1
 
 ## Soluciones de otros usuarios
 
-* https://github.com/ivanlolivier/codember -> Ivan L'olivier 
-* https://github.com/ikurotime/codember_rust -> David Huertas
-* https://github.com/maadeval/codember-javascript -> Mateo Álvarez
-* https://github.com/d3vcloud/codember-2022 -> Xavimon
-* https://github.com/CAMILOITT/codember -> CamiloITT
-* https://github.com/jesusmarzor/codember2022 -> Jesús Martín
-* https://github.com/camiloacostam/codember_js -> Camilo Acosta
+* https://github.com/ivanlolivier/codember -> Ivan L'olivier (Javascript) 
+* https://github.com/ikurotime/codember_rust -> David Huertas (Rust)
+* https://github.com/maadeval/codember-javascript -> Mateo Álvarez (Javascript)
+* https://github.com/d3vcloud/codember-2022 -> Xavimon (Javascript)
+* https://github.com/CAMILOITT/codember -> CamiloITT (Javascript)
+* https://github.com/jesusmarzor/codember2022 -> Jesús Martín (Javascript)
+* https://github.com/camiloacostam/codember_js -> Camilo Acosta (Javascript)
+* https://github.com/metabig/challenges-codember-python -> Antoni Bergas Galmés (Python)
+* https://github.com/kyrex23/codember2022-midudev -> Kyrex (Java)
 
 Si gustan colaborar o quieren que agregue sus soluciones ala lista los pull requests estan abiertos! :man_technologist: :tada:
