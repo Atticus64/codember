@@ -1,15 +1,7 @@
 # Codember 
 
-```
-                 /\ \                       /\ \
-  ___     ___    \_\ \      __     ___ ___  \ \ \____     __    _ __
- /'___\  / __`\  /'_` \   /'__`\ /' __` __`\ \ \ '__`\  /'__`\ /\`'__\
-/\ \__/ /\ \L\ \/\ \L\ \ /\  __/ /\ \/\ \/\ \ \ \ \L\ \/\  __/ \ \ \/
-\ \____\\ \____/\ \___,_\\ \____\\ \_\ \_\ \_\ \ \_,__/\ \____\ \ \_\
- \/____/ \/___/  \/__,_ / \/____/ \/_/\/_/\/_/  \/___/  \/____/  \/_/
+(![image](https://user-images.githubusercontent.com/92958760/202008443-71b08dcb-bf48-4da9-96c3-9fc7478042e2.png)
 
-Puedes superar los retos de programación?
-```
 By [Midudev](https://github.com/midudev) :man_technologist: :space_invader: 
 
 ## Implementaciones de los retos de [Codember](https://codember.dev/) en Javascript y Rust
