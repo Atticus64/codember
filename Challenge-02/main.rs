@@ -9,13 +9,14 @@ fn main() {
         Err(e) => {println!("Something bad happens: {e}"); return; }
     };
 
-    // let arr_codes = res.as_bytes().to_vec();
     let code =  res.as_str().expect("Something failed");
     let coded_msg = String::from(code);
+    println!("🔒 Coded message -> {}", coded_msg);
 
     let result: Vec<String> = coded_msg.split(' ').map(|word| decrypt_word(word) ).collect();
     
-    println!("{:?}", result.join(" "));
+    println!("🔓🔑 Decoded message -> {}", result.join(" "));
+    println!("Los criminales han sido detenidos! 🎉 ");
 
     
 }
