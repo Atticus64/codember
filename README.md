@@ -9,9 +9,10 @@ By [Midudev](https://github.com/midudev) :man_technologist: :space_invader:
 Al menos en Rust se hara el intento :sweat_smile: 
 
 
-|   Ejercicio      |            Solucion          |
+|   Reto      |            Solucion          |
 |      :-:         | :-:                          |                              
 | Arregla Twitter! | :heavy_check_mark:           |
+| ¡Atrapa a esos ciber criminales! | :heavy_check_mark:           |
 
 ```sh
 .
