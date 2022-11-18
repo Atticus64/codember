@@ -37,3 +37,21 @@ fn have_fields(data: &String) -> bool {
         && data.contains(REQUIRED_FIELDS[4])
         && data.contains(REQUIRED_FIELDS[5])
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn check_invalid_data() {
+        let invalid_user = String::from("usr:jona");
+        let invalid_fields = super::have_fields(&invalid_user);
+        assert_eq!(invalid_fields, false);
+    }
+
+    #[test]
+    fn check_valid_data() {
+        let valid_user =
+            String::from("usr:jona age:24 eme:example@gmail.com psw:123 loc:nowhere fll:7");
+        let valid_fields = super::have_fields(&valid_user);
+        assert_eq!(valid_fields, true)
+    }
+}
