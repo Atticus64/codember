@@ -43,7 +43,6 @@ fn decrypt_word(word: &str) -> String {
 }
 
 // tests!
-
 #[cfg(test)]
 mod tests {
     #[test]

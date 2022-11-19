@@ -38,6 +38,7 @@ fn have_fields(data: &String) -> bool {
         && data.contains(REQUIRED_FIELDS[5])
 }
 
+// tests!
 #[cfg(test)]
 mod tests {
     #[test]
