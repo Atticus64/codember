@@ -1,25 +1,35 @@
 import fs from 'node:fs'
 
-fs.readFile('./Challenge-01/users.txt', 'utf-8', async (err, data) => {
-  if (err) throw err
-  getAnswer(data)
-})
-
-const getAnswer = (value) => {
-  const users = value.replaceAll('\n', ' ').split(' ')
-
-  return filterUsers(users)
+const main = () => {
+  fs.readFile('./Challenge-01/users.txt', 'utf-8', async (err, data) => {
+    if (err) throw err
+    getAnswer(data)
+  })
 }
 
-const filterUsers = (users) => {
+export const getAnswer = (value) => {
+  const users = value.replaceAll('\n', ' ').split(' ')
+  filterUsers(users)
+}
+
+export const filterUsers = (users) => {
+  const realUsers = convertToObjectUsers(users)
+
+  const [res, count] = usersWithFields(realUsers)
+
+  console.log(count, res.at(-1))
+
+  return [count, res.at(-1)]
+}
+
+export const convertToObjectUsers = (users) => {
   const realUsers = []
   let arr = []
 
   users.forEach((u) => {
     const arrUser = u.split()
 
-    if (arrUser.includes('')) {
-      // console.log(arr)
+    if (arrUser.includes('') || arrUser.includes('\r')) {
       const newObject = Object.fromEntries(arr.map((u) => u.split(':')))
       realUsers.push(newObject)
       arr = []
@@ -28,8 +38,12 @@ const filterUsers = (users) => {
     }
   })
 
+  return realUsers
+}
+
+export const usersWithFields = (users) => {
   let count = 0
-  const res = realUsers.map((user) => {
+  let res = users.map((user) => {
     if (user.usr && user.psw && user.eme && user.age && user.loc && user.fll) {
       count++
       return user
@@ -37,7 +51,9 @@ const filterUsers = (users) => {
     return false
   })
 
-  console.log(count)
+  res = res.filter(Boolean)
 
-  console.log(res.at(-1))
+  return [res, count]
 }
+
+main()
