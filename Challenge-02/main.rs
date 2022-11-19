@@ -41,3 +41,16 @@ fn decrypt_word(word: &str) -> String {
     }
     return decoded_word;
 }
+
+// tests!
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn check_words() {
+        let first_word = super::decrypt_word("109105100117");
+        let second_word = super::decrypt_word("9911110010110998101114");
+        assert_eq!(first_word, "midu");
+        assert_eq!(second_word, "codember");
+    }
+}
