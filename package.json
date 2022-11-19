@@ -6,11 +6,27 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "lint": "eslint . --fix",
     "reto1": "node Challenge-01/app.js Challenge-01/users.txt",
     "reto2": "node Challenge-02/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "Jona",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "8.28.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.5.1",
+    "eslint-plugin-promise": "6.1.1",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
 }
