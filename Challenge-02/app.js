@@ -1,7 +1,7 @@
 const res = await fetch('https://codember.dev/encrypted.txt')
 const codedString = await res.text()
 export const asciiZ = 122
-export const asciiA = 65
+export const asciiA = 50
 
 const main = () => {
   console.log(`Coded string -> ${codedString}`)
