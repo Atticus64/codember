@@ -1,3 +1,4 @@
 [alias]
 reto1 = ["run", "--bin", "reto1", "--", "./Challenge-01/users.txt"]
 reto2 = ["run", "--bin", "reto2"]
+reto3 = ["run", "--bin", "reto3"]

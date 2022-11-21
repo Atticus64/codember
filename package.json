@@ -9,6 +9,7 @@
     "lint": "eslint . --fix",
     "reto1": "node Challenge-01/app.js Challenge-01/users.txt",
     "reto2": "node Challenge-02/app.js",
+    "reto3": "node Challenge-03/app.js",
     "test": "node --test",
     "prepare": "husky install"
   },
