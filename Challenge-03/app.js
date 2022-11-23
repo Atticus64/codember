@@ -8,11 +8,8 @@ const main = async () => {
   filterColors(colors)
 }
 
-const filterColors = (arrColors) => {
-  // const successions = []
-  // const currentSuccession = []
-  // const numberSuccession = 0
-
+export const filterColors = (arrColors) => {
+  console.log(arrColors)
   let maxZebraCount = 0
   let maxZebraColor = ''
 
@@ -20,42 +17,18 @@ const filterColors = (arrColors) => {
   let nextColor = arrColors[0]
   let currentZebraCount = 1
   arrColors.forEach((color, idx) => {
-    // currentSuccession.push(color)
-    // numberSuccession += 1
-    // const arr = {
-    //   color,
-    //   secondColor: arrColors[idx + 1],
-    //   thirdColor: arrColors[idx + 2]
-    // }
-
-    // // ['blue', 'red', 'blue']
-    // if (color === arr.thirdColor && color !== arr.secondColor) {
-    //   numberSuccession += 1
-    //   console.log(currentSuccession, numberSuccession)
-    //   color = arr.secondColor
-    // }
-
-    // if (color === arr.secondColor) {
-    //   numberSuccession -= 1
-    //   successions.push({ currentSuccession, numberSuccession })
-    //   currentSuccession = []
-    //   numberSuccession = 0
-    // }
-
     if (color !== nextColor || lastColor === color) {
-      currentZebraCount = 1 // reseto el contador
+      currentZebraCount = 1 // reset the counter
     }
-    currentZebraCount++
+
+    color === lastColor ? (currentZebraCount = 1) : currentZebraCount++
+
     nextColor = lastColor
     lastColor = color
+
     if (currentZebraCount > maxZebraCount) {
       maxZebraCount = currentZebraCount
       maxZebraColor = lastColor
-    }
-
-    return {
-      maxZebraColor,
-      maxZebraCount
     }
   })
 
@@ -63,15 +36,11 @@ const filterColors = (arrColors) => {
     maxZebraColor,
     maxZebraCount
   })
+
+  return {
+    maxZebraColor,
+    maxZebraCount
+  }
 }
-
-// const validSuccesion = (succession) => {
-//   if (succession.length === 1) return 'uno!'
-
-//   const lenghtZebra = 10
-//   const color = 'blue'
-
-//   return [lenghtZebra, color]
-// }
 
 main()
