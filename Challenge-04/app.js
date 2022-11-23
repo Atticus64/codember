@@ -7,13 +7,7 @@ const main = () => {
     numbers.push(i)
   }
 
-  const answers = []
-
-  for (const number of numbers) {
-    if (isAscending(number) && haveTwoFive(number)) {
-      answers.push(number)
-    }
-  }
+  const answers = numbers.filter(isAscending).filter(haveTwoFive)
 
   console.log(`Lenght ${answers.length}`)
   console.log(`password ${answers[55]}`)
@@ -23,17 +17,11 @@ const main = () => {
 export const isAscending = (numero) => {
   const convertToNumber = (num) => Number(num)
   const arr = Array.from(String(numero)).map(convertToNumber)
-  return arr.every((n, i) => {
-    return i === 0 || n >= arr[i - 1]
-  })
+  return arr.every((n, i) => i === 0 || n >= arr[i - 1])
 }
 
 // haveFive(465) -> false
 // haveFive(255) -> true
-export const haveTwoFive = (num) => {
-  const cantOfFive = `${num}`.split('5').length - 1
-
-  return cantOfFive >= 2
-}
+export const haveTwoFive = (num) => `${num}`.includes('55')
 
 main()
