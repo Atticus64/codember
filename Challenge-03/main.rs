@@ -1,5 +1,11 @@
 use minreq;
 
+#[derive(Debug)]
+struct ZEBRA {
+  length: u32,
+  color: String
+}
+
 fn main() {
     let url = "https://codember.dev/colors.txt";
     let response = match minreq::get(url).send() {
@@ -18,36 +24,33 @@ fn main() {
 
 
     let mut last_color: String = String::from("");
-    let mut next_color: &str = parsed_arr[0];
-    let mut max_lenght_zebra: u32 = 0;
-    let mut last_zebra_color: String = String::from("");
+    let mut next_color: String = String::from(parsed_arr[0]);
     let mut zebra_lenght: u32 = 0;
 
+    let mut largest_zebra = ZEBRA { length: 0, color: String::from("") };
+
     for color in parsed_arr.into_iter() {
-      if color != next_color && color == last_color {
+      if color != next_color.to_string() || color == last_color {
         zebra_lenght = 1;
       } 
 
       // let clone = color.clone();
       
-      if color == next_color {
-        zebra_lenght = 1;
-      } else {
-        zebra_lenght += 1;
-      }
+      zebra_lenght += 1;
 
-      
-      // next_color = last_color.as_str();
+      next_color = last_color;
       last_color = color.to_string();
       
-      if zebra_lenght > max_lenght_zebra {
-        max_lenght_zebra = zebra_lenght;
-        last_zebra_color = last_color.clone();
+      if zebra_lenght > largest_zebra.length {
+        largest_zebra = ZEBRA {
+          length: zebra_lenght,
+          color: last_color.clone()
+        };
       }
       
     }
 
-    println!("{}", last_zebra_color);
-    println!("{}", max_lenght_zebra);
+    println!("La longitud de la zebra 🦓 mas larga es {} y el color es{}", largest_zebra.length, largest_zebra.color);
+    println!("Feliz Navidad 🎅 🎄")
 
  }
