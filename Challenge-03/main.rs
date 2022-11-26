@@ -2,8 +2,8 @@ use minreq;
 
 #[derive(Debug)]
 struct ZEBRA {
-  length: u32,
-  color: String
+    length: u32,
+    color: String,
 }
 
 fn main() {
@@ -22,35 +22,36 @@ fn main() {
         .split(',')
         .collect();
 
-
     let mut last_color: String = String::from("");
     let mut next_color: String = String::from(parsed_arr[0]);
     let mut zebra_lenght: u32 = 0;
 
-    let mut largest_zebra = ZEBRA { length: 0, color: String::from("") };
+    let mut largest_zebra = ZEBRA {
+        length: 0,
+        color: String::from(""),
+    };
 
     for color in parsed_arr.into_iter() {
-      if color != next_color.to_string() || color == last_color {
-        zebra_lenght = 1;
-      } 
+        if color != next_color.to_string() || color == last_color {
+            zebra_lenght = 1;
+        }
 
-      // let clone = color.clone();
-      
-      zebra_lenght += 1;
+        zebra_lenght += 1;
 
-      next_color = last_color;
-      last_color = color.to_string();
-      
-      if zebra_lenght > largest_zebra.length {
-        largest_zebra = ZEBRA {
-          length: zebra_lenght,
-          color: last_color.clone()
-        };
-      }
-      
+        next_color = last_color;
+        last_color = color.to_string();
+
+        if zebra_lenght > largest_zebra.length {
+            largest_zebra = ZEBRA {
+                length: zebra_lenght,
+                color: last_color.clone(),
+            };
+        }
     }
 
-    println!("La longitud de la zebra 🦓 mas larga es {} y el color es{}", largest_zebra.length, largest_zebra.color);
+    println!(
+        "La longitud de la zebra 🦓 mas larga es {} y el color es{}",
+        largest_zebra.length, largest_zebra.color
+    );
     println!("Feliz Navidad 🎅 🎄")
-
- }
+}
