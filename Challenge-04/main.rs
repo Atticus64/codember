@@ -13,9 +13,16 @@ fn main() {
         .filter(|n| is_incremental(n))
         .collect();
 
-    println!("El numero de posibles contraseñas es {}", posible_passwords.len());
+    println!(
+        "El numero de posibles contraseñas es {}",
+        posible_passwords.len()
+    );
     println!("El indice  55 es: {}", posible_passwords[55]);
-    println!("La respuesta es: {}@{}!!", posible_passwords.len(), posible_passwords[55]);
+    println!(
+        "La respuesta es: {}@{}!!",
+        posible_passwords.len(),
+        posible_passwords[55]
+    );
     println!("Si!!! eres rico! 💰🔑, Bueno tu amigo");
 }
 
