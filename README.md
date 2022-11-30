@@ -8,10 +8,13 @@ By [Midudev](https://github.com/midudev) :man_technologist: :space_invader:
 
 Al menos en Rust se hara el intento :sweat_smile:
 
-|               Reto               |      Solucion      |
-| :------------------------------: | :----------------: |
-|         Arregla Twitter!         | :heavy_check_mark: |
-| ¡Atrapa a esos ciber criminales! | :heavy_check_mark: |
+|                          Reto                           |      Solucion      |
+| :-----------------------------------------------------: | :----------------: |
+|            Arregla Twitter! :bird: :wrench:             | :heavy_check_mark: |
+|      ¡Atrapa a esos ciber criminales! :cop: :lock:      | :heavy_check_mark: |
+|               La zebra de colores :zebra:               | :heavy_check_mark: |
+|     Encuentra la contraseña de tu amigo :detective:     | :heavy_check_mark: |
+| Battle Royale de frameworks y bibliotecas :wrech: :gun: |     :pushpin:      |
 
 ```sh
 .
