@@ -3,3 +3,4 @@
 Cargo.lock
 package-lock.json
 .eslintcache
+.prettierignore
