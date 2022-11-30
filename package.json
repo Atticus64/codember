@@ -11,6 +11,7 @@
     "reto2": "node Challenge-02/app.js",
     "reto3": "node Challenge-03/app.js",
     "reto4": "node Challenge-04/app.js",
+    "reto5": "node Challenge-05/app.js",
     "test": "node --test",
     "prepare": "husky install"
   },

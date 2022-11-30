@@ -25,5 +25,10 @@ name = "reto4"
 src = "Challenge-04/main.rs" 
 path = "Challenge-04/main.rs"
 
+[[bin]]
+name = "reto5"
+src = "Challenge-05/main.rs" 
+path = "Challenge-05/main.rs"
+
 [dependencies]
 minreq = { version = "2.6.0", features = ["https"] }
